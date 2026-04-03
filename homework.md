@@ -20,6 +20,7 @@ Who's your favorite character? Naruto
 Nice to meet you Joseph! Get ready to talk to Naruto...
 What do you want to talk about? Fighting
 Naruto says: Believe it! Never give up!
+```
 
 ## Bonus Task (Hard) — If you dare 🔥
 Try adding an `if/elif/else` statement so the response changes based on what topic they pick.
