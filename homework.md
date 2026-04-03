@@ -1,19 +1,11 @@
-# Big Heading
-## Smaller Heading
-### Smallest heading
+# Homework 1 — Joseph
 
-Normal paragraph text
+## Task 1 — Code
+In `index.py`, write a program that asks the user their name AND their favorite character, then prints a greeting using both.
 
-**bold**
-*italic*
-
-- bullet point
-- another bullet
-
-1. numbered
-2. list
-
-`inline code`
-```python
-print("code block")
+**Example output:**
 ```
+What's your name? Joseph
+Who's your favorite character? Naruto
+Nice to meet you Joseph! Get ready to talk to Naruto..
+
