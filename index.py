@@ -8,6 +8,7 @@ print(f"Great! {topic} is a great topic to talk to about {name}.")
 print(f"{character} says: {topic} is one of my favorite topics to talk about too!")
 if topic.lower() == "fighting":
     character_response = "I love fighting! It's so exciting and adrenaline-pumping!"
+    print(character_response)
 elif topic.lower() == "cooking":    character_response = "Cooking is one of my favorite hobbies! I love trying out new recipes and experimenting with different flavors."
 elif topic.lower() == "traveling":
     character_response = "Traveling is amazing! I love exploring new places and experiencing different cultures."
