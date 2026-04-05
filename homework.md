@@ -1,3 +1,8 @@
+# Tech with Tim
+https://www.youtube.com/watch?v=VchuKL44s6E&t=33s
+Reference this video for 5-10 minutes every day and make progress. For whatever topics on the homework we have jump to sections
+in the video that covers it. Also use google or AI to help understand a task.
+
 # Homework 1 — Joseph(done)
 
 ## Task 1 — Code
@@ -39,7 +44,11 @@ Naruto says: I could really go for some ramen right now...
 
 # Homework 2 — Joseph
 
-## Task 1 — While Loop
+## Task 1 — Redo Task One
+At the start, let the user pick from a list of characters(pick your 5 favorite). 
+Return an error and quit the program if the users response for a character is not in that list.
+
+## Task 2 — While Loop
 Add a while loop to your chatbot so the conversation keeps going until the user types "quit"
 
 **Example output:**
@@ -48,11 +57,11 @@ Naruto says: Believe it!
 What do you want to talk about? quit
 Goodbye!
 
-## Task 2 — Add a Function
+## Task 3 — Add a Function
 Move your if/elif response logic into a function called `get_response(topic)`
 It should take the topic as input and return the character's response.
 
-## Task 3 — Use dictionaries
+## Task 4 — Use dictionaries
 Store your character's topics and responses in a dictionary instead of if/elif.
 Example:
 
