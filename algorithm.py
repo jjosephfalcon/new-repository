@@ -12,6 +12,15 @@
 
 # YOUR CODE GOES BELOW:
 numbers = [5, 2, 8, 1, 9, 3]
+#creates a container
+top_three = []
+#loop through your list of numbers
+for num in numbers:
+    
+    if num not in top_three:
+        top_three.append(num)
+# grabbing the third largest item from the list
+print(top_three[2])        
 
 # Hint: Can you find the largest number first?
 # Then the second largest? Then the third?
