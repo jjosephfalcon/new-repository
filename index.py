@@ -12,4 +12,6 @@ if topic.lower() == "fighting":
 elif topic.lower() == "cooking":    character_response = "Cooking is one of my favorite hobbies! I love trying out new recipes and experimenting with different flavors."
 elif topic.lower() == "traveling":
     character_response = "Traveling is amazing! I love exploring new places and experiencing different cultures."
-else:    character_response = f"{topic} is an interesting topic! I enjoy talking about it too."
+else:    
+    character_response = f"{topic} is an interesting topic! I enjoy talking about it too."
+    print(character_response)
