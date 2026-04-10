@@ -3,6 +3,7 @@ https://www.youtube.com/watch?v=VchuKL44s6E&t=33s
 Reference this video for 5-10 minutes every day and make progress. For whatever topics on the homework we have jump to sections
 in the video that covers it. Also use google or AI to help understand a task.
 
+-----------------------------------------------------------------------------------------------------------------------------------
 # Homework 1 — Joseph(done)
 
 ## Task 1 — Code
@@ -41,7 +42,7 @@ Naruto says: My friends are my power!
 What do you want to talk about? Food
 Naruto says: I could really go for some ramen right now...
 ```
-
+-----------------------------------------------------------------------------------------------------------------------------------
 # Homework 2 — Joseph
 
 ## Task 1 — Redo Task One
@@ -64,7 +65,7 @@ Move your if/elif response logic into a function called `get_response(topic)`
 It should take the topic as input and return the character's response.
 
 ## Task 4 — Use dictionaries
-Store your character's topics and responses in a dictionary instead of if/elif.
+Store your character's topics and responses in a dictionary instead of if/elif statements.
 Example:
 
 responses = {
@@ -73,9 +74,14 @@ responses = {
     "food": "I could really go for some ramen right now..."
 }
 
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
 # Homework 3 — Joseph
 
 ## Task 1 — Install requests
+Go on google and search basic documentation, something like "intro to API's", this 
 Open your terminal and run:
 ```
 pip install requests
@@ -93,6 +99,7 @@ Print the setup and punchline.
 Setup: Why don't scientists trust atoms?
 Punchline: Because they make up everything!
 ```
+
 
 ## Task 3 — Loop it
 Add a while loop — every time the user presses Enter, fetch a new joke. Quit when they type "quit".
