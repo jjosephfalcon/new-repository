@@ -81,11 +81,15 @@ responses = {
 # Homework 3 — Joseph
 
 ## Task 1 — Install requests
-Go on google and search basic documentation, something like "intro to API's", this 
+Go on google and search basic documentation, something like "intro to API's", 
+This video can also be helpful: https://www.youtube.com/watch?v=hpc5jyVpUpw
+Try to get into the habit of self learning with resources online, even ask Claude or ChatGPT. 
+
 Open your terminal and run:
 ```
 pip install requests
 ```
+If you get any bugs, ask ChatGPT/Claude why. 
 
 ## Task 2 — Fetch from an API
 Create a new file called `jokes.py`. Use the `requests` library to fetch a random joke from this free API:
