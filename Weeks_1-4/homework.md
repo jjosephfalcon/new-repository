@@ -155,8 +155,10 @@ What this does is it extracts the environment variable value from the env file.
 
 Consult this YT video to figure out how to use the open weather API: https://www.youtube.com/watch?v=NjhrUHBg8rM
 
-From everything you learned in the YT video, now proceed with the next few steps:
+Consult this YT video to learn what query parameters in APIs are:
+https://www.youtube.com/watch?v=qv5XK91OhFo
 
+From everything you learned in the YT video, now proceed with the next few steps:
 **Step 2:** In `secrets_practice.py`, ask the user for a city and fetch the current weather using the API.
 
 **Expected output:**

@@ -8,11 +8,12 @@ import requests
 load_dotenv()
 
 #Get API key from the env file
-API_KEY = "3082ba1f5cf471c8d8ece072a3ea8f81"
+API_KEY = os.environ.get("API_KEY")
 
-#
+#Get input from the user for a city
 city = input("Enter a city to get the weather: ")
 
+#Makes the API request
 response = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=imperial")
 data = response.json()
 
