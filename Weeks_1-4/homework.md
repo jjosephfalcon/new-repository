@@ -153,7 +153,9 @@ What this does is it extracts the environment variable value from the env file.
 
 ## Task 2 — 
 
-(Get a free key from https://openweathermap.org/api)
+Consult this YT video to figure out how to use the open weather API: https://www.youtube.com/watch?v=NjhrUHBg8rM
+
+From everything you learned in the YT video, now proceed with the next few steps:
 
 **Step 2:** In `secrets_practice.py`, ask the user for a city and fetch the current weather using the API.
 
@@ -162,9 +164,8 @@ What this does is it extracts the environment variable value from the env file.
 Enter a city: New York
 Weather in New York: 72°F, partly cloudy
 
-## Task 3 
 
-## Task 4 — Weather App with Menu
+## Task 3 — Weather App with Menu
 
 **Step 1:** Create a function called `get_weather(city)` that takes a city name and returns the weather.
 
