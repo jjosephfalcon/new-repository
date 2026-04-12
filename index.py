@@ -1,3 +1,4 @@
+"""
 characters = ["naruto", "goku", "luffy", "eren", "tanjiro"]
 
 print("hello world!")
@@ -24,3 +25,21 @@ responses = {
     "music": "Music is life! I could listen to it all day long.",
     "gaming": "Gaming is so fun! What's your favorite game?"
 }
+def get_response(topic):
+    topic_lower = topic.lower()
+    if topic_lower in responses:
+        return responses[topic_lower]
+    else:
+        return f"{topic} is an interesting topic! I enjoy talking about it too."
+
+# Task 2 — While loop until "quit"
+while True:
+    topic = input("what do you want to talk about? ")
+    if topic.lower() == "quit":
+        print("Goodbye!")
+        break
+    character_response = get_response(topic)
+    print(f"{character} says: {character_response}")
+
+print(f"Thanks for chatting, {name}! Come back soon.")
+"""
