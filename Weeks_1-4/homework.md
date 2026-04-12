@@ -155,6 +155,8 @@ What this does is it extracts the environment variable value from the env file.
 
 Consult this YT video to figure out how to use the open weather API: https://www.youtube.com/watch?v=NjhrUHBg8rM
 
+ASK CLAUDE if you are confused about certain stuff. 
+
 Consult this YT video to learn what query parameters in APIs are:
 https://www.youtube.com/watch?v=qv5XK91OhFo
 
