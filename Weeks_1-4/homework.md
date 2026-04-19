@@ -74,119 +74,47 @@ responses = {
     "food": "I could really go for some ramen right now..."
 }
 
-
-
 -----------------------------------------------------------------------------------------------------------------------
 
-# Homework 3 — Joseph
+# Week 3 Homework 4
 
-## Task 1 — Install requests
-Go on google and search basic documentation, something like "intro to API's", 
-This video can also be helpful: https://www.youtube.com/watch?v=hpc5jyVpUpw
-Try to get into the habit of self learning with resources online, even ask Claude or ChatGPT. 
-
-Open your terminal and run:
-```
-pip install requests
-```
-If you get any bugs, ask ChatGPT/Claude why. 
-
-## Task 2 — Fetch from an API
-Create a new file called `jokes.py`. Use the `requests` library to fetch a random joke from this free API:
-```
-https://official-joke-api.appspot.com/random_joke
-```
-Print the setup and punchline.
-
+**New file: practice.py** — this is separate from your chatbot. Pure Python skill building.
+---
+## Task 1 — Dictionary Lookup
+Create a dictionary of 5 superheroes and their powers. Write a program that asks the user to enter a hero's name and prints their power.
+If the hero isn't in the dictionary, print an error message instead of crashing.
 **Example output:**
-```
-Setup: Why don't scientists trust atoms?
-Punchline: Because they make up everything!
-```
 
+Enter a hero name: Spider-Man
+Power: Shoots webs and wall-crawling
+Enter a hero name: Shrek
+Shrek is not in the database.
 
-## Task 3 — Loop it
-Add a while loop — every time the user presses Enter, fetch a new joke. Quit when they type "quit".
-
+---
+## Task 2 — Multiple Responses with Random
+Update your dictionary so each hero has a **list** of 3 responses instead of one string. Use random.choice() to print a different response each time.
 **Example output:**
-```
-Press Enter for a joke (or type quit): 
-Setup: Why did the scarecrow win an award?
-Punchline: Because he was outstanding in his field!
 
-Press Enter for a joke (or type quit): 
-Setup: What do you call a fake noodle?
-Punchline: An impasta!
+Enter a hero name: Spider-Man
+Power: Shoots webs and wall-crawling
+Enter a hero name: Spider-Man
+Power: Has spider-sense
+Enter a hero name: Spider-Man
+Power: Super strength
 
-Press Enter for a joke (or type quit): quit
-Goodbye!
-```
+---
+## Task 3 — Wrap it in a Function
+Move your lookup logic into a function called get_power(hero) that takes the hero name and **returns** the response. Call the function and print the result.
+---
+## Task 4 — While Loop + Quit
+Add a while loop so the user can keep looking up heroes until they type "quit".
+**Example output:**
 
-# Homework 4 — Joseph
+Enter a hero name: Batman
+Power: Master detective and martial artist
+Enter a hero name: Iron Man
+Power: Genius inventor with a powerful suit
+Enter a hero name: quit
+Later!
 
-## Task 1 — Bridge to OpenAI - learn what env variables are
-
-Step 1: 
-
-Go on google, and search "What are env variables python". Read an article for 5-10 minutes, if you are stuck 
-or confused as ChatGPT.
-
-After that, proceed to the next steps. 
-
-Step 2: 
-
-Create a new file in your directory called ".env", put this line in there:
-
-SECRET_WORD=banana python3 secrets_practice.py
-
-After that reate a new file called `secrets_practice.py`
-Inside that file, write this code:
-
-```python
-import os
-example_secret_word = os.environ.get("SECRET_WORD")
-print(f"The secret word is: {secret_word}")
-```
-
-What this does is it extracts the environment variable value from the env file. 
-
-
-## Task 2 — 
-
-Consult this YT video to figure out how to use the open weather API: https://www.youtube.com/watch?v=NjhrUHBg8rM
-
-ASK CLAUDE if you are confused about certain stuff. 
-
-Consult this YT video to learn what query parameters in APIs are:
-https://www.youtube.com/watch?v=qv5XK91OhFo
-
-From everything you learned in the YT video, now proceed with the next few steps:
-**Step 2:** In `secrets_practice.py`, ask the user for a city and fetch the current weather using the API.
-
-**Expected output:**
-
-Enter a city: New York
-Weather in New York: 72°F, partly cloudy
-
-
-## Task 3 — Weather App with Menu
-
-**Step 1:** Create a function called `get_weather(city)` that takes a city name and returns the weather.
-
-**Step 2:** Add a while loop that:
-- Asks the user to input a city name
-- Calls `get_weather()` and prints the result
-- If the user types "quit", exit the loop
-
-**Expected output:**
-```
-Enter a city (or quit): Tokyo
-Weather in Tokyo: 65°F, sunny
-
-Enter a city (or quit): London
-Weather in London: 52°F, rainy
-
-Enter a city (or quit): quit
-Goodbye!
-```
-
+---
