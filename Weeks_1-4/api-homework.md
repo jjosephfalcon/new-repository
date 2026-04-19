@@ -45,3 +45,7 @@ Naruto says: Believe it! I never back down from a fight!
 What do you want to talk about? quit
 
 Goodbye!
+
+# Resources
+
+https://developers.openai.com/api/reference/python
