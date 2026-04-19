@@ -148,4 +148,8 @@ example_secret_word = os.environ.get("SECRET_WORD")
 print(f"The secret word is: {secret_word}")
 ```
 
+<<<<<<< Updated upstream
 What this does is it extracts the environment variable value from the env file.e
+=======
+What this does is it extracts the environment variable value from the env file.
+>>>>>>> Stashed changes
