@@ -49,3 +49,5 @@ Goodbye!
 # Resources
 
 https://developers.openai.com/api/reference/python
+
+https://realpython.com/python-api/
