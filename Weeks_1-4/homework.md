@@ -74,50 +74,35 @@ responses = {
     "food": "I could really go for some ramen right now..."
 }
 
-
-
 -----------------------------------------------------------------------------------------------------------------------
 
-# Homework 3 — Joseph
+# Week 3 Homework 4
 
-## Task 1 — Install requests
-Go on google and search basic documentation, something like "intro to API's", 
-This video can also be helpful: https://www.youtube.com/watch?v=hpc5jyVpUpw
-Try to get into the habit of self learning with resources online, even ask Claude or ChatGPT. 
-
-Open your terminal and run:
-```
-pip install requests
-```
-If you get any bugs, ask ChatGPT/Claude why. 
-
-## Task 2 — Fetch from an API
-Create a new file called `jokes.py`. Use the `requests` library to fetch a random joke from this free API:
-```
-https://official-joke-api.appspot.com/random_joke
-```
-Print the setup and punchline.
-
+**New file: practice.py** — this is separate from your chatbot. Pure Python skill building.
+---
+## Task 1 — Dictionary Lookup
+Create a dictionary of 5 superheroes and their powers. Write a program that asks the user to enter a hero's name and prints their power.
+If the hero isn't in the dictionary, print an error message instead of crashing.
 **Example output:**
-```
-Setup: Why don't scientists trust atoms?
-Punchline: Because they make up everything!
-```
 
+Enter a hero name: Spider-Man
+Power: Shoots webs and wall-crawling
+Enter a hero name: Shrek
+Shrek is not in the database.
 
-## Task 3 — Loop it
-Add a while loop — every time the user presses Enter, fetch a new joke. Quit when they type "quit".
-
+---
+## Task 2 — Multiple Responses with Random
+Update your dictionary so each hero has a **list** of 3 responses instead of one string. Use random.choice() to print a different response each time.
 **Example output:**
-```
-Press Enter for a joke (or type quit): 
-Setup: Why did the scarecrow win an award?
-Punchline: Because he was outstanding in his field!
 
-Press Enter for a joke (or type quit): 
-Setup: What do you call a fake noodle?
-Punchline: An impasta!
+Enter a hero name: Spider-Man
+Power: Shoots webs and wall-crawling
+Enter a hero name: Spider-Man
+Power: Has spider-sense
+Enter a hero name: Spider-Man
+Power: Super strength
 
+<<<<<<< HEAD
 Press Enter for a joke (or type quit): quit
 Goodbye!
 ```
@@ -198,3 +183,21 @@ Goodbye!
 =======
 What this does is it extracts the environment variable value from the env file.
 >>>>>>> Stashed changes:Weeks 1-4/homework.md
+=======
+---
+## Task 3 — Wrap it in a Function
+Move your lookup logic into a function called get_power(hero) that takes the hero name and **returns** the response. Call the function and print the result.
+---
+## Task 4 — While Loop + Quit
+Add a while loop so the user can keep looking up heroes until they type "quit".
+**Example output:**
+
+Enter a hero name: Batman
+Power: Master detective and martial artist
+Enter a hero name: Iron Man
+Power: Genius inventor with a powerful suit
+Enter a hero name: quit
+Later!
+
+---
+>>>>>>> 9cf52e80d364c1705d734ebdcc8613b0a07863f3
