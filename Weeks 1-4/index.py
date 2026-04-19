@@ -99,9 +99,9 @@ def get_power(hero):
 
 while True:
     name = input("Enter a hero name (or 'quit' to exit): ")
-    if name == "quit":
+    if name.lower() == "quit":
         break
-    
-    result = get_power(name)
+
+    result = get_power(name.lower())
     print(f"{name}, your hero's power is: {result}")
 
