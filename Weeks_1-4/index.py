@@ -42,7 +42,7 @@ while True:
     print(f"{character} says: {character_response}")
 
 print(f"Thanks for chatting, {name}! Come back soon.")
-"""
+
 import requests
 from dotenv import load_dotenv
 import os
@@ -56,7 +56,7 @@ secret_word = os.environ.get("SECRET_WORD")
 # Task 2
 def get_weather(city):
     api_key = os.environ.get("API_KEY")
-    url = "http://api.openweathermap.org/data/2.5/weather"
+    url = ""
     params = {
         "q": city,
         "appid": api_key,
@@ -79,3 +79,29 @@ while True:
         print("Goodbye!")
         break
     print(get_weather(city))
+
+"""
+
+
+
+hero_powers = {
+    "naruto": "Shadow Clone Jutsu",
+    "goku": "Kamehameha",
+    "luffy": "Gomu Gomu no Mi",
+    "eren": "Titan Shifting",
+    "tanjiro": "Water Breathing"
+}
+def get_power(hero):
+    if hero in hero_powers:
+        return hero_powers[hero]
+    else:
+        return "Sorry, I don't know that hero's power."
+
+while True:
+    name = input("Enter a hero name (or 'quit' to exit): ")
+    if name == "quit":
+        break
+
+    result = get_power(name)
+    print(f"{name}, your hero's power is: {result}")
+
