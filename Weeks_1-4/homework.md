@@ -43,5 +43,3 @@ Enter a hero name: quit
 Later!
 
 # Reseources
-
-https://www.codecademy.com/enrolled/courses/learn-python-3
