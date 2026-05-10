@@ -1,51 +1,96 @@
-# Homework 4 — Functions
+## IMPORTANT - watch this video on functions
 
-## Task 1 
+https://www.youtube.com/watch?v=u-OmVr_fT4s
 
-Functions are reusable blocks of code. Master these and everything else gets easier.
+This video will be helpful for you to clear up any gaps on functions. 
 
-```
-Check this code out:
-a = 1
-b = 2
-print(a + b)
-```
-That outputs 5 right?
+https://www.youtube.com/watch?v=rRTjPnVooxE
 
-How would you make it easiar so that it is a function that holds and calls the logic?
+This video will be helpful for you to clear up any gaps on while loops. 
 
-Create a new file in your Weeks_4-8 folder called functions.py, this is where you will complete Tasks 2-4
+## Task 1 — Your First Function
 
-For task 2:
+Step 1: Define a function called `greet` that takes one parameter called `name`.
 
-Write a function called add that adds two numbers and prints the result.
+Step 2: Inside the function, return a greeting string that includes the name.
 
-Calling the add function should look like:
+Step 3: Outside the function, call `greet` with your name and print the result.
 
-add(a, b)
-
-Should return the addition of whats in the parameters
-
-## Task 2
-
-Write a function called `multiply(a, b)` that returns the product of two numbers.
-
-## Task 3
-
-Write a function called `is_even(number)` that returns `True` if the number is even and `False` if it's odd.
-
-## Task 4 — Countdown Machine
-
-Write a function called countdown(n) that uses a while loop to count down from n to 0 and prints each number.
 Expected output:
-countdown(5)
 
-5
-4
-3
-2
-1
-Blast off!
+```
+Hello, Kemal!
+```
+
+---
+
+## Task 2 — Function + If/Else
+
+Step 1: Define a function called `check_even` that takes one parameter called `number`.
+
+Step 2: Inside the function, use an if/else to check if the number is even or odd. (Hint: use %)
+
+Step 3: Return "Even!" or "Odd!" depending on the result.
+
+Step 4: Outside the function, call `check_even` with a few different numbers and print each result.
+
+Expected output:
+
+```
+Even!
+
+Odd!
+```
+
+---
+
+## Task 3 — Function Inside a While Loop
+
+Step 1: Define a function called `say_hello` that takes one parameter called `name` and returns a greeting with the name in it.
+
+Step 2: Outside the function, write a while loop that asks the user to enter a name.
+
+Step 3: Inside the while loop, call `say_hello` with what the user typed and print the result.
+
+Step 4: If the user types "quit", print "Goodbye!" and break out of the loop.
+
+Expected output:
+
+```
+Enter a name: Kemal
+
+Hello, Kemal!
+
+Enter a name: quit
+
+Goodbye!
+```
+
+---
+
+## Task 4 — Function with If/Else Inside a While Loop
+
+Step 1: Define a function called `check_password` that takes one parameter called `password`.
+
+Step 2: Inside the function, check if the password equals "python123". Return "Access granted!" if it does, "Wrong password!" if it doesn't.
+
+Step 3: Outside the function, write a while loop that asks the user to enter a password.
+
+Step 4: Inside the while loop, call `check_password` with what the user typed and print the result.
+
+Step 5: If the result is "Access granted!", break out of the loop.
+
+Expected output:
+
+```
+Enter password: hello
+
+Wrong password!
+
+Enter password: python123
+
+Access granted!
+```
 
 ## Task 5 — Guess the Number
 
