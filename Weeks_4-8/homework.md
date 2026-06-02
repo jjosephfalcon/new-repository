@@ -1,3 +1,9 @@
+Before completing the tasks, watch these videos and read the articles so you can be refreshed on the topics that have been confusing.
+
+techwithtim.net/tutorials/python-programming/beginner-python-tutorials/functions
+
+While loops: techwithtim.net/tutorials/python-programming/beginner-python-tutorials/while-loops
+
 ## Task 1 — Grade Checker
 
 **Step 1:** Define a function called `check_grade(score)` that takes one parameter called `score`.
@@ -90,3 +96,9 @@ Nice out!
 Enter a temperature (or quit): quit
 Goodbye!
 ```
+
+## Task 4
+
+Read these docs on agentic AI
+
+ibm.com/think/topics/ai-agents
