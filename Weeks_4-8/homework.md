@@ -29,6 +29,29 @@ Goodbye!
 
 # Task 2
 
+Number Guessing with Basic Dictionary
+
+Computer picks a number 1–20. User gets 3 attempts. Track just two things:
+
+pythonstats = {
+    "attempts": 0,
+    "won": False
+}
+
+Expected output:
+Guess a number (1-20): 10
+Too high!
+Guess a number (1-20): 5
+Too low!
+Guess a number (1-20): 7
+You got it!
+
+--- Stats ---
+Attempts used: 3
+Won: True
+
+# Task 3
+
 Challenge 3 HARD MODE — Number Guessing with Stats Tracker
 
 The computer picks a random number 1–100. The user gets unlimited guesses but you track everything in a dictionary and print a full stats report at the end.
