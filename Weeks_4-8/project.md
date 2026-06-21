@@ -29,3 +29,13 @@ response = client.responses.create(
     input="Explain the concept of quantum computing in one simple sentence."
 )
 ```
+
+# Stage 2
+
+Make the AI conversation continuous, so the chatbot remembers the conversation. 
+
+Read these docs:
+
+https://developers.openai.com/api/docs/guides/conversation-state
+
+To understand how to make it a continuos conversation. 
