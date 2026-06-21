@@ -39,3 +39,18 @@ Read these docs:
 https://developers.openai.com/api/docs/guides/conversation-state
 
 To understand how to make it a continuos conversation. 
+
+Key points to understand, the AIs output is always the last message of what was appended in the array
+
+If the array is
+
+"
+messages = [
+    {"role": "system", "content": "You are Goku."},
+    {"role": "user", "content": "hey"},
+    {"role": "assistant", "content": "Hey there, what's up?"},
+    {"role": "user", "content": "how are you"}
+]
+"
+
+Then the AI will respond with... The answer to "How are you?" Except it'll have all of the conversation history of the first three messages as well.
