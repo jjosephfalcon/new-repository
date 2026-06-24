@@ -1,85 +1,46 @@
-# Task 1 — Movie Directors
+Task 1 — Football Players
 
-Step 1: Create a dictionary called movies that stores at least 5 movie titles and their directors.
-Create a second dictionary called genres that stores those same 5 movie titles and their genre (Action, Comedy, Horror, etc.)
+Step 1: Create a dictionary called players that stores at least 5 football player names and their club/team. Create a second dictionary called positions that stores those same 5 players and their position (Forward, Midfielder, Defender, etc.)
 
-Step 2: Define a function called get_movie_info(title) that takes a movie title and returns a formatted string with both the director AND the genre. If the title isn't in the dictionary, return "Never heard of it!".
-–
-💡 Hint: look up the title in both dictionaries separately, then combine the results into one string using an f-string.
+Step 2: Define a function called get_player_info(name) that takes a player name and returns a formatted string with both the club AND the position. If the name isn't in the dictionary, return "Player not found!"
+💡 Hint: look up the name in both dictionaries separately, then combine with an f-string.
 
-Step 3: Write a while loop that asks the user to enter a movie title. If they type "quit", print "Goodbye!" and break. Otherwise, call get_movie_info() and print the result.
+Step 3: Write a while loop that asks the user to enter a player name. If they type "quit", print "See you next match!" and break. Otherwise, call get_player_info() and print the result.
 
 Expected output:
 
-Enter a movie (or quit): Inception
+Enter a player (or quit): Messi
+Club: Inter Miami | Position: Forward
 
-Director: Christopher Nolan | Genre: Sci-Fi
+Enter a player (or quit): Ronaldo
+Club: Al-Nassr | Position: Forward
 
-Enter a movie (or quit): The Shining
+Enter a player (or quit): LeBron
+Player not found!
 
-Director: Stanley Kubrick | Genre: Horror
+Enter a player (or quit): quit
+See you next match!
 
-Enter a movie (or quit): Shrek
+Task 2 — Password Checker with Dictionary
 
-Never heard of it!
+The user gets 3 attempts to guess the correct password. Track attempts and whether they got in.
 
-Enter a movie (or quit): quit
-
-Goodbye!
-
-# Task 2
-
-Number Guessing with Basic Dictionary
-
-Computer picks a number 1–20. User gets 3 attempts. Track just two things:
-
-pythonstats = {
+stats = {
     "attempts": 0,
-    "won": False
+    "access_granted": False
 }
 
+The correct password is "python123". Each wrong guess increments attempts. If they get it right, set access_granted to True and break. Print the stats at the end.
+
 Expected output:
-Guess a number (1-20): 10
-Too high!
-Guess a number (1-20): 5
-Too low!
-Guess a number (1-20): 7
-You got it!
+
+Enter password: hello
+Wrong password!
+Enter password: abc
+Wrong password!
+Enter password: python123
+Access granted!
 
 --- Stats ---
 Attempts used: 3
-Won: True
-
-# Task 3
-
-Challenge 3 HARD MODE — Number Guessing with Stats Tracker
-
-The computer picks a random number 1–100. The user gets unlimited guesses but you track everything in a dictionary and print a full stats report at the end.
-
-pythonstats = {
-    "guesses": [],
-    "total_attempts": 0,
-    "won": False
-}
-
-Expected output:
-
-Guess a number (1-100): 50
-
-Too high!
-
-Guess a number (1-100): 25
-
-Too low!
-
-Guess a number (1-100): 37
-
-You got it!
-
---- Your Stats ---
-
-Total attempts: 3
-
-Your guesses: [50, 25, 37]
-
-Won: True
+Access granted: True
