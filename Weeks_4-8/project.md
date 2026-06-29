@@ -92,15 +92,15 @@ Quick Reference
 python# Start the list
 messages = [{"role": "system", "content": f"You are {character}."}]
 
-# Add your message
+### Add your message
 
 messages.append({"role": "user", "content": user_input})
 
-# Add the AI reply
+### Add the AI reply
 
 messages.append({"role": "assistant", "content": reply})
 
-# Send the whole list every time
+### Send the whole list every time
 
 response = client.chat.completions.create(
     model="llama-3.3-70b-versatile",
