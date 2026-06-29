@@ -106,3 +106,35 @@ response = client.chat.completions.create(
     model="llama-3.3-70b-versatile",
     messages=messages
 )
+
+This is a similar example of how your code should look. Let's say you're trying to build an AI Chef Assistant
+
+"
+
+import os
+from groq import Groq
+
+client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+
+cuisine = input("What cuisine do you want cooking advice for? ")
+
+messages = [{"role": "system", "content": f"You are a world class {cuisine} chef. Stay in character at all times."}]
+
+while True:
+    user_input = input("You: ")
+    if user_input.lower() == "quit":
+        print("Goodbye!")
+        break
+    messages.append({"role": "user", "content": user_input})
+    response = client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        messages=messages
+    )
+    reply = response.choices[0].message.content.strip()
+    messages.append({"role": "assistant", "content": reply})
+    print(f"Chef: {reply}")
+    
+    
+    "
+    
+    "
