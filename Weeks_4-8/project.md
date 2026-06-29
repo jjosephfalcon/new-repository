@@ -109,7 +109,7 @@ response = client.chat.completions.create(
 
 This is a similar example of how your code should look. Let's say you're trying to build an AI Chef Assistant
 
-"
+```
 
 import os
 from groq import Groq
@@ -135,6 +135,4 @@ while True:
     print(f"Chef: {reply}")
     
     
-    "
-    
-    "
+```
