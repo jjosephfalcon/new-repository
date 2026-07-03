@@ -49,7 +49,7 @@ Attempts used: 3
 Access granted: True
 
 
-Task 3 — HARD MODE: Quiz Game with Full Stats
+# Task 3 — HARD MODE: Quiz Game with Full Stats
 
 Build a quiz game. Store 5 questions and answers in a dictionary. Loop through every question, ask the user, and track everything in a stats dictionary.
 
