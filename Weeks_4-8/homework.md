@@ -1,4 +1,4 @@
-Task 1 — Football Players
+# Task 1 — Football Players
 
 Step 1: Create a dictionary called players that stores at least 5 football player names and their club/team. Create a second dictionary called positions that stores those same 5 players and their position (Forward, Midfielder, Defender, etc.)
 
@@ -6,8 +6,6 @@ Step 2: Define a function called get_player_info(name) that takes a player name 
 
 
 💡 Hint: look up the name in both dictionaries separately, then combine with an f-string.
-
-
 
 Step 3: Write a while loop that asks the user to enter a player name. If they type "quit", print "See you next match!" and break. Otherwise, call get_player_info() and print the result.
 
@@ -26,7 +24,7 @@ Enter a player (or quit): quit
 See you next match!
 
 
-Task 2 — Password Checker with Dictionary
+# Task 2 — Password Checker with Dictionary
 
 The user gets 3 attempts to guess the correct password. Track attempts and whether they got in.
 
