@@ -1,53 +1,45 @@
-# Task 1 — Football Players
+# Task 1
 
-Step 1: Create a dictionary called players that stores at least 5 football player names and their club/team. Create a second dictionary called positions that stores those same 5 players and their position (Forward, Midfielder, Defender, etc.)
+Task 1 — Look Up Values in a Dictionary
 
-Step 2: Define a function called get_player_info(name) that takes a player name and returns a formatted string with both the club AND the position. If the name isn't in the dictionary, return "Player not found!"
+Step 1: Copy this dictionary into your file:
 
-
-💡 Hint: look up the name in both dictionaries separately, then combine with an f-string.
-
-Step 3: Write a while loop that asks the user to enter a player name. If they type "quit", print "See you next match!" and break. Otherwise, call get_player_info() and print the result.
-
-Expected output:
-
-Enter a player (or quit): Messi
-Club: Inter Miami | Position: Forward
-
-Enter a player (or quit): Ronaldo
-Club: Al-Nassr | Position: Forward
-
-Enter a player (or quit): LeBron
-Player not found!
-
-Enter a player (or quit): quit
-See you next match!
-
-
-# Task 2 — Password Checker with Dictionary
-
-The user gets 3 attempts to guess the correct password. Track attempts and whether they got in.
-
-pythonstats = {
-    "attempts": 0,
-    "access_granted": False
+pythonpowers = {
+    "Spider-Man": "web-slinging",
+    "Thor": "lightning",
+    "Hulk": "super strength"
 }
 
-The correct password is "python123". Each wrong guess increments attempts. If they get it right, set access_granted to True and break. Print the stats at the end.
+Step 2: Print out Thor's power directly using its key.
+
+Step 3: Ask the user for a hero name with input(), then print that hero's power.
 
 Expected output:
 
-Enter password: hello
-Wrong password!
-Enter password: abc
-Wrong password!
-Enter password: python123
-Access granted!
+Thor's power is lightning
 
---- Stats ---
-Attempts used: 3
-Access granted: True
+Enter a hero: Hulk
+Hulk's power is super strength
 
+
+
+# Task 2
+
+Task 2 — Loop Through a Dictionary
+
+Now instead of looking up ONE hero, print ALL of them automatically.
+
+Step 1: Use the same powers dictionary from Task 1.
+
+Step 2: Write a for loop that goes through every hero and prints their name AND their power.
+
+💡 Hint: when you loop over a dictionary, the loop variable gives you the keys one at a time. Then use square brackets to get the value for each key.
+
+Expected output:
+
+Spider-Man's power is web-slinging
+Thor's power is lightning
+Hulk's power is super strength
 
 # Task 3 — HARD MODE: Quiz Game with Full Stats
 
