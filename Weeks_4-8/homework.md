@@ -21,8 +21,6 @@ Thor's power is lightning
 Enter a hero: Hulk
 Hulk's power is super strength
 
-
-
 # Task 2
 
 Task 2 — Loop Through a Dictionary
@@ -41,7 +39,19 @@ Spider-Man's power is web-slinging
 Thor's power is lightning
 Hulk's power is super strength
 
-# Task 3 — HARD MODE: Quiz Game with Full Stats
+# Task 3
+
+Read these documentation articles:
+
+https://realpython.com/python-dicts/
+
+https://realpython.com/python-tuple/
+
+https://mimo.org/glossary/python/set
+
+By next class, explain to me what the difference is between a dictionary, tuple, and set
+
+# Task 4 — HARD MODE: Quiz Game with Full Stats
 
 Build a quiz game. Store 5 questions and answers in a dictionary. Loop through every question, ask the user, and track everything in a stats dictionary.
 
@@ -71,7 +81,6 @@ Your answers: ['Paris', '56', 'green']
 
 
 💡 Hints:
-
 
 Store questions as keys, answers as values in one dictionary
 Loop through the dictionary with a for loop
