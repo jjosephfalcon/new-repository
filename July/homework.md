@@ -58,3 +58,11 @@ Unknown hero!
 Enter a hero: quit
 Goodbye!
 ```
+
+# Task 4 - Learn what clean code is
+
+Read these articles and be able to explain to me what clean code is. 
+- https://blog.codacy.com/what-is-clean-code
+- https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29
+
+
