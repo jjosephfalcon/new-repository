@@ -1,68 +1,99 @@
-```markdown
-# Task 1 — Look Up + Handle Missing Heroes
+# Homework — Dictionaries + Functions + While Loops
+
+## Task 1 — Restaurant Menu
 
 Copy this dictionary into your file:
 
-powers = {
-    "Spider-Man": "web-slinging",
-    "Thor": "lightning",
-    "Hulk": "super strength",
-    "Iron Man": "powered armor",
-    "Black Widow": "combat mastery"
+```
+menu = {
+    "burger": 8.99,
+    "pizza": 11.99,
+    "sushi": 14.99,
+    "tacos": 7.49,
+    "pasta": 10.99
 }
+```
 
-Write a while loop that keeps asking the user for a hero name. If the hero is in the dictionary, print their power. If not, print "Hero not found!" Quit when they type "quit".
-
-Expected output:
-Enter a hero: Thor
-Thor's power is lightning
-
-Enter a hero: Batman
-Hero not found!
-
-Enter a hero: quit
-Goodbye!
-
----
-
-# Task 2 — Loop + Count
-
-Use the same dictionary. Loop through every hero and print their name and power. Then print the total number of heroes at the end.
+Write a while loop that asks the user for a food item. If it's in the menu, print the price. If not, print `"Not on the menu!"` Quit when they type `"quit"`.
 
 Expected output:
-Spider-Man's power is web-slinging
-Thor's power is lightning
-Hulk's power is super strength
-Iron Man's power is powered armor
-Black Widow's power is combat mastery
+```
+Enter a food: pizza
+pizza costs $11.99
 
-Total heroes: 5
+Enter a food: hotdog
+Not on the menu!
 
-💡 Hint: you don't need to count manually — there's a built-in function for that(find it on google).
-
----
-
-# Task 3 — Function + Dictionary
-
-Define a function called get_power(hero) that takes a hero name and returns their power. If the hero isn't found, return "Unknown hero!"
-
-Then write a while loop outside the function that asks the user for a hero name, calls get_power(), and prints the result. Quit on "quit".
-
-Expected output:
-Enter a hero: Hulk
-Hulk's power is super strength
-
-Enter a hero: Deadpool
-Unknown hero!
-
-Enter a hero: quit
+Enter a food: quit
 Goodbye!
 ```
 
-# Task 4 - Learn what clean code is
+---
 
-Read these articles and be able to explain to me what clean code is. 
-- https://blog.codacy.com/what-is-clean-code
-- https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29
+## Task 2 — Country Capitals
 
+Copy this dictionary into your file:
 
+```
+capitals = {
+    "Japan": "Tokyo",
+    "France": "Paris",
+    "Brazil": "Brasilia",
+    "Kenya": "Nairobi",
+    "Canada": "Ottawa"
+}
+```
+
+Write a function called `get_capital(country)` that takes a country name and returns its capital. If the country isn't found, return `"Country not found!"`.
+
+Then write a while loop that asks the user for a country, calls `get_capital()`, and prints the result. Quit on `"quit"`.
+
+Expected output:
+```
+Enter a country: Japan
+The capital of Japan is Tokyo
+
+Enter a country: Australia
+Country not found!
+
+Enter a country: quit
+Goodbye!
+```
+
+---
+
+## Task 3 — Sports + Counting
+
+Copy this dictionary into your file:
+
+```
+sports = {
+    "LeBron": "basketball",
+    "Messi": "soccer",
+    "Serena": "tennis",
+    "Usain": "sprinting",
+    "Federer": "tennis"
+}
+```
+
+Write a function called `get_sport(athlete)` that returns their sport or `"Athlete not found!"` if they're not in the dictionary.
+
+Write a while loop that asks for an athlete name, calls `get_sport()`, and prints the result. Keep count of how many athletes were found successfully. Print the total when they quit.
+
+Expected output:
+```
+Enter an athlete: Messi
+Messi plays soccer
+
+Enter an athlete: Jordan
+Athlete not found!
+
+Enter an athlete: Serena
+Serena plays tennis
+
+Enter an athlete: quit
+You looked up 2 athletes.
+Goodbye!
+```
+
+💡 Hint: only add to the count if the athlete was actually found.
