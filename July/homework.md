@@ -1,32 +1,107 @@
-## Homework Test Problem
-
-## Task 1 — Restaurant Ordering System
+# Homework — Dictionaries + Functions + While Loops (Harder Set)
+## Task 1 — ATM / Bank Accounts
 Copy this dictionary into your file:
 ~~~python
-menu = {
-    "burger": 8.99,
-    "pizza": 11.99,
-    "sushi": 14.99,
-    "tacos": 7.49,
-    "pasta": 10.99
+accounts = {
+    "alice": 500,
+    "bob": 120,
+    "carlos": 1000,
+    "dana": 45
 }
 ~~~
-Write a while loop that lets the user order multiple items. Keep a running **total** and a **list** of what they ordered. If the item isn't on the menu, print `"Not on the menu!"` and don't add anything. When they type `"quit"`, print their full order and the total cost.
+Build a mini banking system with a while loop menu. The user picks an action: `deposit`, `withdraw`, `balance`, or `quit`.
+
+Write two functions:
+- `deposit(username, amount)` — adds money to that account and returns the new balance.
+- `withdraw(username, amount)` — subtracts money, but **only if they have enough**. If they don't, return `"Insufficient funds!"` and don't change the balance.
+
+If the username isn't in `accounts`, print `"No such account!"` and skip the action.
 
 Expected output:
 ~~~
-Enter a food: pizza
-Added pizza ($11.99) to your order.
-Enter a food: hotdog
-Not on the menu!
-Enter a food: tacos
-Added tacos ($7.49) to your order.
-Enter a food: quit
-Your order: pizza, tacos
-Total: $19.48
+Action (deposit/withdraw/balance/quit): balance
+Username: bob
+bob's balance is $120
+Action (deposit/withdraw/balance/quit): withdraw
+Username: bob
+Amount: 200
+Insufficient funds!
+Action (deposit/withdraw/balance/quit): deposit
+Username: bob
+Amount: 80
+bob's new balance is $200
+Action (deposit/withdraw/balance/quit): quit
 Goodbye!
 ~~~
 💡 Hints:
-- Use a list to track ordered items and a float variable for the total.
-- Use `round(total, 2)` when printing so you don't get floating point weirdness.
+- Convert the amount to a number with `int(input(...))` or `float(...)`.
+- Check `if username in accounts` before doing anything.
+- Functions can read and modify `accounts` directly since it's defined above them.
 ---
+## Task 2 — Video Game Inventory (Nested Dictionaries)
+Copy this dictionary into your file:
+~~~python
+players = {
+    "Knight": {"gold": 150, "potions": 3, "level": 12},
+    "Mage":   {"gold": 80,  "potions": 7, "level": 15},
+    "Rogue":  {"gold": 220, "potions": 1, "level": 10}
+}
+~~~
+This is a **dictionary of dictionaries**. Write a function `get_stat(player, stat)` that returns the value of a stat (like `"gold"` or `"level"`) for a player. Handle two failure cases:
+- If the player doesn't exist, return `"No such player!"`
+- If the player exists but the stat doesn't, return `"No such stat!"`
+
+Then write a while loop that asks for a player name and a stat, calls `get_stat()`, and prints the result. Quit on `"quit"`.
+
+Expected output:
+~~~
+Player: Mage
+Stat: potions
+Mage has 7 potions
+Player: Rogue
+Stat: gold
+Rogue has 220 gold
+Player: Wizard
+Stat: gold
+No such player!
+Player: Knight
+Stat: mana
+No such stat!
+Player: quit
+Goodbye!
+~~~
+💡 Hints:
+- `players["Mage"]` gives you back a whole inner dictionary.
+- `players["Mage"]["potions"]` digs one level deeper.
+- Check `if player in players` first, then `if stat in players[player]`.
+---
+## Task 3 — Election Vote Counter (+ Find the Winner)
+Start with an **empty** dictionary — you're building it as votes come in:
+~~~python
+votes = {}
+~~~
+Write a while loop that asks the user to enter a candidate's name (a vote). Each time a name is entered, add 1 to that candidate's count in the `votes` dictionary. If it's a brand new name, start them at 1.
+
+Write a function `find_winner(votes)` that returns the name of the candidate with the most votes.
+
+When the user types `"quit"`, print the full vote tally **and** announce the winner.
+
+Expected output:
+~~~
+Vote for: Sarah
+Vote for: Mike
+Vote for: Sarah
+Vote for: Sarah
+Vote for: Mike
+Vote for: quit
+
+Final tally:
+  Sarah: 3
+  Mike: 2
+Winner: Sarah!
+Goodbye!
+~~~
+💡 Hints:
+- To count safely: `votes[name] = votes.get(name, 0) + 1`
+- To find the winner, loop through the dictionary tracking the highest count and who holds it, OR use `max(votes, key=votes.get)`.
+- If `votes` is empty at quit time, print `"No votes cast."` instead of crashing.
