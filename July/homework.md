@@ -1,10 +1,8 @@
-# Homework — Dictionaries + Functions + While Loops
+## Homework Test Problem
 
-## Task 1 — Restaurant Menu
-
+## Task 1 — Restaurant Ordering System
 Copy this dictionary into your file:
-
-```
+~~~python
 menu = {
     "burger": 8.99,
     "pizza": 11.99,
@@ -12,88 +10,23 @@ menu = {
     "tacos": 7.49,
     "pasta": 10.99
 }
-```
-
-Write a while loop that asks the user for a food item. If it's in the menu, print the price. If not, print `"Not on the menu!"` Quit when they type `"quit"`.
+~~~
+Write a while loop that lets the user order multiple items. Keep a running **total** and a **list** of what they ordered. If the item isn't on the menu, print `"Not on the menu!"` and don't add anything. When they type `"quit"`, print their full order and the total cost.
 
 Expected output:
-```
+~~~
 Enter a food: pizza
-pizza costs $11.99
-
+Added pizza ($11.99) to your order.
 Enter a food: hotdog
 Not on the menu!
-
+Enter a food: tacos
+Added tacos ($7.49) to your order.
 Enter a food: quit
+Your order: pizza, tacos
+Total: $19.48
 Goodbye!
-```
-
+~~~
+💡 Hints:
+- Use a list to track ordered items and a float variable for the total.
+- Use `round(total, 2)` when printing so you don't get floating point weirdness.
 ---
-
-## Task 2 — Country Capitals
-
-Copy this dictionary into your file:
-
-```
-capitals = {
-    "Japan": "Tokyo",
-    "France": "Paris",
-    "Brazil": "Brasilia",
-    "Kenya": "Nairobi",
-    "Canada": "Ottawa"
-}
-```
-
-Write a function called `get_capital(country)` that takes a country name and returns its capital. If the country isn't found, return `"Country not found!"`.
-
-Then write a while loop that asks the user for a country, calls `get_capital()`, and prints the result. Quit on `"quit"`.
-
-Expected output:
-```
-Enter a country: Japan
-The capital of Japan is Tokyo
-
-Enter a country: Australia
-Country not found!
-
-Enter a country: quit
-Goodbye!
-```
-
----
-
-## Task 3 — Sports + Counting
-
-Copy this dictionary into your file:
-
-```
-sports = {
-    "LeBron": "basketball",
-    "Messi": "soccer",
-    "Serena": "tennis",
-    "Usain": "sprinting",
-    "Federer": "tennis"
-}
-```
-
-Write a function called `get_sport(athlete)` that returns their sport or `"Athlete not found!"` if they're not in the dictionary.
-
-Write a while loop that asks for an athlete name, calls `get_sport()`, and prints the result. Keep count of how many athletes were found successfully. Print the total when they quit.
-
-Expected output:
-```
-Enter an athlete: Messi
-Messi plays soccer
-
-Enter an athlete: Jordan
-Athlete not found!
-
-Enter an athlete: Serena
-Serena plays tennis
-
-Enter an athlete: quit
-You looked up 2 athletes.
-Goodbye!
-```
-
-💡 Hint: only add to the count if the athlete was actually found.
