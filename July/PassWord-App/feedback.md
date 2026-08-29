@@ -4,8 +4,8 @@ Kemal — this is your best-structured app yet. Answer these questions before ne
 ## What You Did Well ✅
 
 - Clean menu loop with `break` — works exactly how a real terminal app should
-- `vault_menu(username)` — passing the logged-in user between functions is a real skill, not a beginner move
-- You built signup/login early without being asked — respect
+- `vault_menu(username)` — passing the logged-in user was great. 
+- You built signup/login early without being asked. 
 - Each password is stored as a dictionary with website, username, password, and category — that's how real apps organize data
 
 ## Questions 🧠

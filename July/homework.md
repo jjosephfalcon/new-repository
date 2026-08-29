@@ -1,5 +1,76 @@
 # Homework — Dictionaries + Functions + While Loops (Harder Set)
-## Task 1 — ATM / Bank Accounts
+
+## Task 1 — Dictionary Lookup
+
+Copy this into your file:
+
+```python
+capitals = {
+    "France": "Paris",
+    "Japan": "Tokyo",
+    "Brazil": "Brasilia",
+    "Egypt": "Cairo",
+    "Canada": "Ottawa"
+}
+```
+
+Ask the user for a country. If it's in the dictionary, print the capital. If not, print "Never heard of it!"
+
+Expected output:
+
+```
+Enter a country: Japan
+The capital is Tokyo
+
+Enter a country: Mexico
+Never heard of it!
+```
+
+---
+
+## Task 2 — Wrap it in a Function
+
+Take Task 1 and wrap the lookup logic in a function called `get_capital(country)`. It should return the capital or "Never heard of it!". Call the function and print the result.
+
+---
+
+## Task 3 — Add a While Loop
+
+Now add a while loop around Task 2 so the user can keep entering countries until they type "quit".
+
+Expected output:
+
+```
+Enter a country: France
+The capital is Paris
+
+Enter a country: Japan
+The capital is Tokyo
+
+Enter a country: quit
+Goodbye!
+```
+
+---
+
+## Task 4 — New Dictionary, Same Pattern
+
+Now do the exact same thing but with this dictionary:
+
+```python
+athletes = {
+    "LeBron": "Basketball",
+    "Messi": "Soccer",
+    "Federer": "Tennis",
+    "Serena": "Tennis",
+    "Bolt": "Track"
+}
+```
+
+Ask the user for an athlete name and print their sport. Wrap it in a function called `get_sport(name)`. Keep the while loop. Quit on "quit".
+
+
+## Task 4 — ATM / Bank Accounts
 Copy this dictionary into your file:
 ~~~python
 accounts = {
@@ -38,7 +109,7 @@ Goodbye!
 - Check `if username in accounts` before doing anything.
 - Functions can read and modify `accounts` directly since it's defined above them.
 ---
-## Task 2 — Video Game Inventory (Nested Dictionaries)
+## Task 5 — Video Game Inventory (Nested Dictionaries)
 Copy this dictionary into your file:
 ~~~python
 players = {
@@ -75,7 +146,7 @@ Goodbye!
 - `players["Mage"]["potions"]` digs one level deeper.
 - Check `if player in players` first, then `if stat in players[player]`.
 ---
-## Task 3 — Election Vote Counter (+ Find the Winner)
+## Task 6 — Election Vote Counter (+ Find the Winner)
 Start with an **empty** dictionary — you're building it as votes come in:
 ~~~python
 votes = {}

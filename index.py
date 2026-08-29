@@ -1,6 +1,3 @@
-"""
-VaultX - Password Manager
-"""
 
 users = {}       
 vaults = {}      
