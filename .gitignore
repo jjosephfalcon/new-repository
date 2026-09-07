@@ -4,3 +4,8 @@
 .env.development
 .env.production
 .env*.local
+
+# Python virtual environment / caches
+venv/
+__pycache__/
+*.pyc
